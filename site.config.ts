@@ -19,7 +19,6 @@ export default siteConfig({
  // open graph metadata (optional)
 description:
   'Oftalmologista em Umuarama, PR. Cirurgia de catarata, cirurgia refrativa, neuro-oftalmologia e diagnóstico oftalmológico baseado em evidência.',
-
   // social usernames (optional)
   // use apenas o username, sem @ e sem URL
   twitter: 'AugustoLegnani',
