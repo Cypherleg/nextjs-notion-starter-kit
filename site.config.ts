@@ -9,17 +9,21 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Dr. Augusto Legnani Neto – Oftalmologia',
+  domain: 'augustolegnani.com.br',
+  author: 'Dr. Augusto Legnani Neto',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description:
+    'Médico oftalmologista em Umuarama, PR. Diagnóstico preciso, cirurgia de catarata e cirurgia refrativa.',
 
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  // use apenas o username, sem @ e sem URL
+  twitter: null,
+  github: 'Cypherleg',
+  linkedin: null,
+  instagram: 'draugustolegnani',
+  tiktok: 'draugustolegnani'
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
