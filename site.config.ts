@@ -15,7 +15,8 @@ export default siteConfig({
 
   // open graph metadata (optional)
   description:
-    'Médico oftalmologista em Umuarama, PR. Diagnóstico preciso, cirurgia de catarata e cirurgia refrativa.',
+    'description:
+  'Oftalmologista em Umuarama, PR. Cirurgia de catarata, cirurgia refrativa, neuro-oftalmologia e diagnóstico oftalmológico baseado em evidência.',',
 
   // social usernames (optional)
   // use apenas o username, sem @ e sem URL
