@@ -22,8 +22,6 @@ export default siteConfig({
   twitter: 'AugustoLegnani',
   github: 'Cypherleg',
   linkedin: 'augusto-legnani-42051336a',
-  instagram: 'draugustolegnani',
-  tiktok: 'dr.augustolegnani',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
