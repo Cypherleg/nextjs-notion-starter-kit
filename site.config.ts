@@ -48,10 +48,7 @@ export default siteConfig({
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
   // }
   pageUrlOverrides: {
-  '/oftalmologista-umuarama': 'ID_DA_PAGINA_NOTION',
-  '/cirurgia-refrativa': 'ID_DA_PAGINA_NOTION',
-  '/cirurgia-de-catarata': 'ID_DA_PAGINA_NOTION',
-  '/contato': '2d226bc6ed36801a83d5e9fd1bc2dad6'
+  '/oftalmologista-em-umuarama': '2d226bc6ed36801a83d5e9fd1bc2dad6'
 },
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
