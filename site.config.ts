@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Dr. Augusto Legnani Neto – Oftalmologia',
-  domain: 'augustolegnani.com.br',
+  domain: 'www.augustolegnani.com.br',
   author: 'Dr. Augusto Legnani Neto',
 
   // open graph metadata (optional)
