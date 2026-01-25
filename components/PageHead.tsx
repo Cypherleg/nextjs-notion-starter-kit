@@ -122,6 +122,52 @@ export function PageHead({
           })}
         </script>
       )}
+
+      {/* Physician Schema Markup for SEO */}
+      {!isBlogPost && pageId === '2d226bc6-ed36-801a-83d5-e9fd1bc2dad6' && (
+        <script type='application/ld+json'>
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Physician',
+            name: 'Dr. Augusto Legnani Neto',
+            url: config.host,
+            image: socialImageUrl,
+            description: 'Oftalmologista em Umuarama, PR. Especialista em cirurgia de catarata, cirurgia refrativa, neuro-oftalmologia, córnea e ceratocone.',
+            medicalSpecialty: 'Ophthalmology',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'OFTA VITTA',
+              addressLocality: 'Umuarama',
+              addressRegion: 'PR',
+              addressCountry: 'BR'
+            },
+            telephone: '(44) 3361-3464',
+            email: 'legnani@oftavitta.com.br',
+            sameAs: [
+              'https://www.instagram.com/draugustolegnani',
+              'https://www.instagram.com/oftavitta',
+              'https://www.linkedin.com/in/augusto-legnani-42051336a'
+            ]
+          })}
+        </script>
+      )}
+
+      {/* WebSite Schema Markup */}
+      {!isBlogPost && (
+        <script type='application/ld+json'>
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: site?.name || config.name,
+            url: config.host,
+            description: site?.description || description,
+            author: {
+              '@type': 'Person',
+              name: config.author
+            }
+          })}
+        </script>
+      )}
     </Head>
   )
 }
