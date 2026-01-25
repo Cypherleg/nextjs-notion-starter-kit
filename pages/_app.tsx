@@ -18,6 +18,7 @@ import * as Fathom from 'fathom-client'
 import { useRouter } from 'next/router'
 import { posthog } from 'posthog-js'
 import * as React from 'react'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { bootstrap } from '@/lib/bootstrap-client'
 import {
@@ -61,5 +62,10 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Component {...pageProps} />
+      <GoogleAnalytics gaId="G-41THCEN9NN" />
+    </>
+  )
 }
