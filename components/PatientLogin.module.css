@@ -1,0 +1,226 @@
+.container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #0066FF 0%, #00D9FF 100%);
+}
+
+.loginCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  width: 100%;
+  overflow: hidden;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  background: linear-gradient(135deg, #0066FF 0%, #00D9FF 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.header p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.form {
+  padding: 2rem;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #E5E5E5;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0066FF;
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+}
+
+.input::placeholder {
+  color: #B0B0B0;
+}
+
+.error {
+  background: #FFE5E5;
+  color: #CC0000;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  border-left: 4px solid #CC0000;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #0066FF 0%, #00D9FF 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 102, 255, 0.3);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #E5E5E5;
+}
+
+.link {
+  color: #0066FF;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover {
+  color: #0052CC;
+  text-decoration: underline;
+}
+
+.info {
+  background: #F8F9FA;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #4A4A4A;
+  line-height: 1.6;
+}
+
+.info strong {
+  color: #1A1A1A;
+}
+
+.info p {
+  margin: 0.5rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .loginCard {
+    border-radius: 12px;
+  }
+
+  .header {
+    padding: 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .info {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .loginCard {
+    background: #2A2A2A;
+  }
+
+  .inputGroup label {
+    color: #FFFFFF;
+  }
+
+  .input {
+    background: #1A1A1A;
+    border-color: #4A4A4A;
+    color: #FFFFFF;
+  }
+
+  .input:focus {
+    border-color: #3385FF;
+    background: #2A2A2A;
+  }
+
+  .info {
+    background: #1A1A1A;
+    color: #B0B0B0;
+  }
+
+  .info strong {
+    color: #FFFFFF;
+  }
+}
